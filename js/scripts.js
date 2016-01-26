@@ -10,13 +10,14 @@ $(document).ready(function() {
     $("ol#userList").append("<li><span class='task'>" + userTask + "</span></li>");
     $("input#item").val();
 
-$(".task").click(function () {
-$(this).wrap("<strike>");
-$(this).fadeOut("slow");
- $("ol#compList").append("<li><span class='tiger'>" + userTask +  "</span></li>");
-});
+    $(".task").click(function () {
+      console.log(this);
+      $(this).wrap("<strike>");
+      $(this).fadeOut("slow");
+      $("ol#compList").append("<li><span class='tiger'>" + userTask +  "</span></li>");
+    });
 
+// FIXED SOME INDENTATION FOR EASIER READING
 
-
-});
+  });
 });
